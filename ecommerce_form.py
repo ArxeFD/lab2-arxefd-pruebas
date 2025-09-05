@@ -1,4 +1,4 @@
-
+import time
 class OnlinePurchase:
     def __init__(self):
         self.valid_coupons = {"DISCOUNT10": 0.15, "DISCOUNT30": 0.30}
@@ -55,4 +55,8 @@ class OnlinePurchase:
 if __name__ == "__main__":
     online_purchase = OnlinePurchase()
     cart = {"Laptop":1, "Mouse": 2}
-    print(online_purchase.process_purchase(cart, "DISCOUNT15", "BosqUES locos"))
+    timeInicio= time.time()
+    print(online_purchase.process_purchase(cart, "DISCOUNT10", "BosqUES locos"))
+    timeFinal = time.time()
+
+    print(timeFinal - timeInicio)
