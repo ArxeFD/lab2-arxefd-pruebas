@@ -55,4 +55,4 @@ class OnlinePurchase:
 if __name__ == "__main__":
     online_purchase = OnlinePurchase()
     cart = {"Laptop":1, "Mouse": 2}
-    print(online_purchase.process_purchase(cart, "", "Bosq"))
+    print(online_purchase.process_purchase(cart, "DISCOUNT15", "BosqUES locos"))
