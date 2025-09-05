@@ -54,6 +54,5 @@ class OnlinePurchase:
 
 if __name__ == "__main__":
     online_purchase = OnlinePurchase()
-    cart = {"Laptop":1, "Mouse": 2, "Monitor":4}
+    cart = {}
     print(online_purchase.process_purchase(cart, "DISCOUNT10", "BosqUES locos"))
-    timeFinal = time.time()
